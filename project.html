@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MUSIC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script>
+	$(document).ready(function(){
+	  $('[data-toggle="tooltip"]').tooltip(); 
+	});
+  </script>
+  <style>
+  * {
+  box-sizing: border-box;
+  }
+  body {
+    position: relative; 
+  }
+  .affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+  .navbar {
+    margin-bottom: 0px;
+  }
+  .affix ~ .container-fluid {
+   position: relative;
+   top: 50px;
+  }
+  #section1 {padding-top:50px;height:610px;color: #fff;width: 100%;background-color: #1E88E5;background-image:url("home.jpg");background-repeat:no-repeat;background-size:cover;position:relative;background-position:center;background-position-x:center;background-position-y:center;opacity:0.9}
+  #section2 {padding-top:50px;height:610px;color: #fff;width: 100%;background-color: #673ab7;background-image:url("albums.jpg");background-repeat:no-repeat;background-size:cover;position:relative;background-position:center;background-position-x:center;background-position-y:center;opacity:0.9}
+  #section3 {padding-top:50px;height:610px;color: #fff;width: 100%;background-color: #ff9800;background-image:url("artists.jpg");background-repeat:no-repeat;background-size:cover;position:relative;background-position:center;background-position-x:center;background-position-y:center;opacity:0.9}
+  #section4 {padding-top:50px;height:610px;color: #fff;width: 100%;background-color: #00bcd4;background-image:url("buy.jpg");background-repeat:no-repeat;background-size:cover;position:relative;background-position:center;background-position-x:center;background-position-y:center;opacity:0.9}
+
+#space {height:20px; background-color: #ffffff;}
+
+.hero-text {
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  background:transparent;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #bfbfbf;
+  width: 100%;
+  padding: 20px;
+}
+
+  </style>
+</head>
+<center>
+<body data-spy="scroll" data-target=".navbar" data-offset="450" >
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="" > 
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>  
+        </button>
+      <a class="navbar-brand" href="#">HOME</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">MUSIC</a></li>
+          <li><a href="#section2">MUSIC ALBUMS</a></li>
+          <li><a href="#section3">ARTISTS</a></li>
+          <li><a href="#section4">Buy</a></li>
+	  <li><a href="login.html"target="_blank">Login/SignUp</li>
+       </ul>
+        <ul class="nav navbar-nav navbar-right">
+      	  <marquee><li><a href="#section5"><span class="glyphicon glyphicon-user"></span><font color = "White"> Contact Us - musicIsmylife98@gmail.com</font></a></marquee>
+	   </ul>
+	  </div>
+  	</div>
+  </div>
+</nav>   
+</center> 
+
+<div id="section1" class="container-fluid">
+	<div class="hero-text">
+  <p style="font-size: 65px; color:white;">Music</p>
+  	<i>Music is what life sounds like.</i><br>
+  	<i>Music is the color of sound.</i><br>
+  	<i>Music is the poetry of the air.</i><br>
+  	<i>Music is like a dream.</i><br>
+  	<p  style="color:white; font-size:25px;">Explore some fresh music today</p>
+	</div>
+</div>
+<div id="space"> </div>
+<div id="section2" class="container-fluid">
+  	<div class="hero-text">
+  <p style="font-size: 65px; color:white;"><a href="language.html"target="_blank" data-toggle="tooltip" title="Click here to see Music Albums">Albums</a></p>
+  	<i>You can't judge an album by a single song; it's like judging a book by only reading a single chapter.</i>
+	</div>
+</div>
+<div id="space"> </div>
+<div id="section3" class="container-fluid">
+   	<div class="hero-text">
+  <p style="font-size: 65px; color:white;"><a href="language.html"target="_blank" data-toggle="tooltip" title="Click here to see all Artists">Artists</a></p>
+  <i>A creative artist is someone who put the soul in the music and make it divine and pure.</i>
+	</div>
+</div>
+<div id="space"> </div>
+<div id="section4" class="container-fluid">
+  	<div class="hero-text">
+  <p style="font-size: 65px; color:white;"><a href="buy.html"target="_blank" data-toggle="tooltip" title="Click here to Buy Music">BUY</a></p>
+  <i>Listen to your favorite music ad-free on all your devices, online or off.Buy now!</i>
+	</div>
+</div>
+
+</div>
+
+</body>
+</html>

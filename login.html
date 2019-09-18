@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>music/SignUp</title>
+<style>
+body
+{
+background-image: url("logo1.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+ background-position: center;
+background-size: 100% 100%;
+}
+</style>
+<script>
+function validate()
+{ 
+var uname=document.nikki.uname.value;
+var fname=document.nikki.fname.value;
+var lname=document.nikki.lname.value;
+var mobile=document.nikki.pno.value;
+var pass=document.nikki.pass.value;
+var pass1=document.nikki.pass1.value;
+var email=document.nikki.email.value;  
+if(uname.length<6)
+{
+alert("User Name should be of at least 6 characters.");
+}
+if(isNaN(fname)==false)
+{
+alert("First Name should be alphabetic value");
+return false;
+}
+else if(isNaN(lname)==false)
+{
+alert("Last Name should be alphabetic value");
+return false;
+}
+else if(mobile.length<10)
+{
+alert("Please enter a valid Phone number");
+}
+else if(pass.length<8)
+{
+alert("Password should be of at least 8 characters.");
+return false;
+}
+else if(pass1!=pass)
+{
+alert("Re-enter password must contain repetition of password.");
+return false;
+}  
+}
+</script>
+
+<center><h2><form name="nikki" method=get action="project.html"target="_blank" style="width: 1000px;height: 100px;display:inline-block;" onsubmit="return validate()">
+<font color="White">
+<fieldset>
+<legend>SignUp</legend>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UserName: <input type=text name=uname required><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name: <input type=text name=fname required><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name: <input type=text name=lname required><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: <input type=email name=email required><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone no: <input type=text name=pno required><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password: <input type=password name=pass required><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Confirm Password: <input type=password name=pass1 required><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" Value=SignUp>&nbspAlready Have An Account?&nbsp
+<a name="Login"></a>
+<button><a href="SignUp.html"target="_blank">Login</a></button>
+</form>
+</fieldset>
+</font>
+</h2>
+</center>
+</html>
+</head>
